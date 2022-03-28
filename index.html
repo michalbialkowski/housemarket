@@ -15,229 +15,247 @@
 </head>
 
 <body class="bg-transparent m-0">
-    <main>
-        <div class="bg-light py-5">
-            <div class="container">
-                <div class="mb-5">
-                    <div class="row justify-content-center">
-                        <div class="col-7">
-                            <h2 class="text-center mb-3"><strong>Dostępne inwestycje</strong></h2>
-                            <p class="lead text-center mb-0">Zainwestuj bez wychodzenia z domu. Przejrzyj dostępne oferty i wybierz inwestycję, która według Ciebie przyniesie największą stopę zwrotu.<br></p>
+    <div>
+        <header>
+            <div>
+                <nav class="navbar navbar-light navbar-expand-md bg-white shadow">
+                    <div class="container"><a class="navbar-brand" href="#">HouseMarket</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navcol-1">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Zainwestuj</a></li>
+                                <li class="nav-item"><a class="nav-link" href="application.html">Zgłoś nieruchomość</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Logowanie</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Rejestracja</a></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <form>
-                    <div class="form-row justify-content-center m-n2">
-                        <div class="col-sm-6 col-lg-4 p-2"><label>Kwota inwestycji</label><select class="form-control select2">
-                                <option value="">Wybierz</option>
-                                <option value="do-1000">Do 1000 PLN</option>
-                                <option value="do-10000">Do 10.000 PLN</option>
-                                <option value="do-100000">Do 100.000 PLN</option>
-                                <option value="nad-100000">Powyżej 100.000 PLN</option>
-                            </select></div>
-                        <div class="col-sm-6 col-lg-4 p-2"><label>Okres inwestycji</label><select class="form-control select2">
-                                <option value="">Wybierz</option>
-                                <option value="0.5">Do pół roku</option>
-                                <option value="">Do 2 lat</option>
-                                <option value="5">Do 5 lat</option>
-                            </select></div>
-                        <div class="col-sm-6 col-lg-4 p-2"><label>Oczekiwana stopa zwrotu (ryzyko)</label><select class="form-control select2">
-                                <option value="">Wybierz</option>
-                                <option value="2">~ 2% RSSO niskie ryzyko</option>
-                                <option value="5">~ 5% RSSO średnie ryzyko</option>
-                                <option value="">~ 10% + RSSO wysokie ryzyko</option>
-                            </select></div>
-                        <div class="col-12 p-2"><button class="btn btn-primary btn-block btn-lg" type="button"><strong>Zobacz dostępne inwestycje</strong></button></div>
-                        <div class="col-12 p-2"><button class="btn btn-link btn-block" type="button">Sprawdź również nadchodzące inwestycje</button></div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="bg-light py-5">
+                <div class="container">
+                    <div class="mb-5">
+                        <div class="row justify-content-center">
+                            <div class="col-7">
+                                <h2 class="text-center mb-3"><strong>Dostępne inwestycje</strong></h2>
+                                <p class="lead text-center mb-0">Zainwestuj bez wychodzenia z domu. Przejrzyj dostępne oferty i wybierz inwestycję, która według Ciebie przyniesie największą stopę zwrotu.<br></p>
+                            </div>
+                        </div>
                     </div>
-                </form>
-                <div class="mt-5">
-                    <div class="row my-n4">
-                        <div class="col-12 col-md-6 col-xl-4 py-4">
-                            <div class="card bg-white shadow-sm rounded">
-                                <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
-                                <div class="card-body pt-4 pb-3">
-                                    <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
-                                    <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
-                                </div>
-                                <div>
-                                    <table class="table table-sm mb-0">
-                                        <tbody>
-                                            <tr>
-                                                <th class="pl-3">% zwrotu</th>
-                                                <td class="text-right pr-3">5% RSSO</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Okres inwestycji</th>
-                                                <td class="text-right pr-3">60 miesięcy</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Lokalizacja</th>
-                                                <td class="text-right pr-3">Warszawa</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="card-footer bg-transparent px-3 py-0 mt-n3">
-                                    <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
+                    <form>
+                        <div class="form-row justify-content-center m-n2">
+                            <div class="col-sm-6 col-lg-4 p-2"><label>Kwota inwestycji</label><select class="form-control select2">
+                                    <option value="">Wybierz</option>
+                                    <option value="do-1000">Do 1000 PLN</option>
+                                    <option value="do-10000">Do 10.000 PLN</option>
+                                    <option value="do-100000">Do 100.000 PLN</option>
+                                    <option value="nad-100000">Powyżej 100.000 PLN</option>
+                                </select></div>
+                            <div class="col-sm-6 col-lg-4 p-2"><label>Okres inwestycji</label><select class="form-control select2">
+                                    <option value="">Wybierz</option>
+                                    <option value="0.5">Do pół roku</option>
+                                    <option value="">Do 2 lat</option>
+                                    <option value="5">Do 5 lat</option>
+                                </select></div>
+                            <div class="col-sm-6 col-lg-4 p-2"><label>Oczekiwana stopa zwrotu (ryzyko)</label><select class="form-control select2">
+                                    <option value="">Wybierz</option>
+                                    <option value="2">~ 2% RSSO niskie ryzyko</option>
+                                    <option value="5">~ 5% RSSO średnie ryzyko</option>
+                                    <option value="">~ 10% + RSSO wysokie ryzyko</option>
+                                </select></div>
+                            <div class="col-12 p-2"><button class="btn btn-primary btn-block btn-lg" type="button"><strong>Zobacz dostępne inwestycje</strong></button></div>
+                            <div class="col-12 p-2"><button class="btn btn-link btn-block" type="button">Sprawdź również nadchodzące inwestycje</button></div>
+                        </div>
+                    </form>
+                    <div class="mt-5">
+                        <div class="row my-n4">
+                            <div class="col-12 col-md-6 col-xl-4 py-4">
+                                <div class="card bg-white shadow-sm rounded">
+                                    <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
+                                    <div class="card-body pt-4 pb-3">
+                                        <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
+                                        <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
+                                    </div>
+                                    <div>
+                                        <table class="table table-sm mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="pl-3">% zwrotu</th>
+                                                    <td class="text-right pr-3">5% RSSO</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Okres inwestycji</th>
+                                                    <td class="text-right pr-3">60 miesięcy</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Lokalizacja</th>
+                                                    <td class="text-right pr-3">Warszawa</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer bg-transparent px-3 py-0 mt-n3">
+                                        <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 py-4">
-                            <div class="card bg-white shadow-sm rounded">
-                                <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
-                                <div class="card-body pt-4 pb-3">
-                                    <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
-                                    <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
-                                </div>
-                                <div>
-                                    <table class="table table-sm mb-0">
-                                        <tbody>
-                                            <tr>
-                                                <th class="pl-3">% zwrotu</th>
-                                                <td class="text-right pr-3">5% RSSO</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Okres inwestycji</th>
-                                                <td class="text-right pr-3">60 miesięcy</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Lokalizacja</th>
-                                                <td class="text-right pr-3">Warszawa</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="card-footer bg-transparent px-3 py-0 mt-n3">
-                                    <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 py-4">
-                            <div class="card bg-white shadow-sm rounded">
-                                <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
-                                <div class="card-body pt-4 pb-3">
-                                    <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
-                                    <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
-                                </div>
-                                <div>
-                                    <table class="table table-sm mb-0">
-                                        <tbody>
-                                            <tr>
-                                                <th class="pl-3">% zwrotu</th>
-                                                <td class="text-right pr-3">5% RSSO</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Okres inwestycji</th>
-                                                <td class="text-right pr-3">60 miesięcy</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Lokalizacja</th>
-                                                <td class="text-right pr-3">Warszawa</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="card-footer bg-transparent px-3 py-0 mt-n3">
-                                    <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
+                            <div class="col-12 col-md-6 col-xl-4 py-4">
+                                <div class="card bg-white shadow-sm rounded">
+                                    <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
+                                    <div class="card-body pt-4 pb-3">
+                                        <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
+                                        <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
+                                    </div>
+                                    <div>
+                                        <table class="table table-sm mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="pl-3">% zwrotu</th>
+                                                    <td class="text-right pr-3">5% RSSO</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Okres inwestycji</th>
+                                                    <td class="text-right pr-3">60 miesięcy</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Lokalizacja</th>
+                                                    <td class="text-right pr-3">Warszawa</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer bg-transparent px-3 py-0 mt-n3">
+                                        <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 py-4">
-                            <div class="card bg-white shadow-sm rounded">
-                                <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
-                                <div class="card-body pt-4 pb-3">
-                                    <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
-                                    <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
-                                </div>
-                                <div>
-                                    <table class="table table-sm mb-0">
-                                        <tbody>
-                                            <tr>
-                                                <th class="pl-3">% zwrotu</th>
-                                                <td class="text-right pr-3">5% RSSO</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Okres inwestycji</th>
-                                                <td class="text-right pr-3">60 miesięcy</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Lokalizacja</th>
-                                                <td class="text-right pr-3">Warszawa</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="card-footer bg-transparent px-3 py-0 mt-n3">
-                                    <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 py-4">
-                            <div class="card bg-white shadow-sm rounded">
-                                <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
-                                <div class="card-body pt-4 pb-3">
-                                    <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
-                                    <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
-                                </div>
-                                <div>
-                                    <table class="table table-sm mb-0">
-                                        <tbody>
-                                            <tr>
-                                                <th class="pl-3">% zwrotu</th>
-                                                <td class="text-right pr-3">5% RSSO</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Okres inwestycji</th>
-                                                <td class="text-right pr-3">60 miesięcy</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Lokalizacja</th>
-                                                <td class="text-right pr-3">Warszawa</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="card-footer bg-transparent px-3 py-0 mt-n3">
-                                    <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
+                            <div class="col-12 col-md-6 col-xl-4 py-4">
+                                <div class="card bg-white shadow-sm rounded">
+                                    <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
+                                    <div class="card-body pt-4 pb-3">
+                                        <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
+                                        <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
+                                    </div>
+                                    <div>
+                                        <table class="table table-sm mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="pl-3">% zwrotu</th>
+                                                    <td class="text-right pr-3">5% RSSO</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Okres inwestycji</th>
+                                                    <td class="text-right pr-3">60 miesięcy</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Lokalizacja</th>
+                                                    <td class="text-right pr-3">Warszawa</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer bg-transparent px-3 py-0 mt-n3">
+                                        <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 py-4">
-                            <div class="card bg-white shadow-sm rounded">
-                                <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
-                                <div class="card-body pt-4 pb-3">
-                                    <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
-                                    <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
+                            <div class="col-12 col-md-6 col-xl-4 py-4">
+                                <div class="card bg-white shadow-sm rounded">
+                                    <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
+                                    <div class="card-body pt-4 pb-3">
+                                        <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
+                                        <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
+                                    </div>
+                                    <div>
+                                        <table class="table table-sm mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="pl-3">% zwrotu</th>
+                                                    <td class="text-right pr-3">5% RSSO</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Okres inwestycji</th>
+                                                    <td class="text-right pr-3">60 miesięcy</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Lokalizacja</th>
+                                                    <td class="text-right pr-3">Warszawa</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer bg-transparent px-3 py-0 mt-n3">
+                                        <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <table class="table table-sm mb-0">
-                                        <tbody>
-                                            <tr>
-                                                <th class="pl-3">% zwrotu</th>
-                                                <td class="text-right pr-3">5% RSSO</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Okres inwestycji</th>
-                                                <td class="text-right pr-3">60 miesięcy</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="pl-3">Lokalizacja</th>
-                                                <td class="text-right pr-3">Warszawa</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4 py-4">
+                                <div class="card bg-white shadow-sm rounded">
+                                    <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
+                                    <div class="card-body pt-4 pb-3">
+                                        <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
+                                        <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
+                                    </div>
+                                    <div>
+                                        <table class="table table-sm mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="pl-3">% zwrotu</th>
+                                                    <td class="text-right pr-3">5% RSSO</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Okres inwestycji</th>
+                                                    <td class="text-right pr-3">60 miesięcy</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Lokalizacja</th>
+                                                    <td class="text-right pr-3">Warszawa</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer bg-transparent px-3 py-0 mt-n3">
+                                        <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
+                                    </div>
                                 </div>
-                                <div class="card-footer bg-transparent px-3 py-0 mt-n3">
-                                    <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4 py-4">
+                                <div class="card bg-white shadow-sm rounded">
+                                    <div><img class="img-fluid" src="https://housemarket.com.pl/wp-content/uploads/2022/03/pexels-vecislavas-popa-1571453-scaled.jpg"></div>
+                                    <div class="card-body pt-4 pb-3">
+                                        <h5 class="card-title mb-2"><a class="text-dark" href="content.html">Mieszkanie dla Zbyszka i Kasi</a></h5>
+                                        <p class="text-dark card-text card-text">Kasia i Zbyszek niedawno skończyli studia, aktualnie pracują w Warszawie. Kasia jest pielęgniarką, Zbyszek prowadzi małą kawiarnię…<br></p>
+                                    </div>
+                                    <div>
+                                        <table class="table table-sm mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="pl-3">% zwrotu</th>
+                                                    <td class="text-right pr-3">5% RSSO</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Okres inwestycji</th>
+                                                    <td class="text-right pr-3">60 miesięcy</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pl-3">Lokalizacja</th>
+                                                    <td class="text-right pr-3">Warszawa</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer bg-transparent px-3 py-0 mt-n3">
+                                        <div class="d-flex justify-content-center" style="transform: translateY(50%);"><a class="btn btn-primary mr-0 px-4" role="button" href="content.html"><strong>Zainwestuj</strong></a></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
     <script src="assets/js/jquery.min.js?h=84e399b8f2181ccd73394fdeddff1638"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js?h=2504f2315ca47ea4d62e67e20a5551d7"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
