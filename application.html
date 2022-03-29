@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=53a3e8cd55575d0d4dd737bfaacb1d0a">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css?h=37efe7e508357f382d0a5b2b73cd47ee">
+    <link rel="stylesheet" href="assets/css/utilities/utilities.compiled.css?h=32698cf99c0a28fb6a595deedc9db4fb">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/overrides/select2.compiled.css?h=7a6507aa6169f1d8ff97fda0ec002e79">
     <link rel="stylesheet" href="assets/css/page.compiled.css?h=b4d4c89ed618af8d8d4192ed8d9b89f8">
@@ -24,8 +25,8 @@
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Zainwestuj</a></li>
                                 <li class="nav-item"><a class="nav-link" href="application.html">Zgłoś nieruchomość</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Logowanie</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Rejestracja</a></li>
+                                <li class="nav-item"><a class="nav-link" href="register.html">Logowanie</a></li>
+                                <li class="nav-item"><a class="nav-link" href="register.html">Rejestracja</a></li>
                             </ul>
                         </div>
                     </div>
@@ -45,23 +46,73 @@
                     </div>
                     <form>
                         <div class="form-row justify-content-center m-n2">
-                            <div class="col-12 p-2"><label>Rodzaj nieruchomości</label><select class="form-control select2">
+                            <div class="col-12 p-2"><label>Na jaki cel szukasz finansowania?</label><select class="form-control select2">
                                     <option value="">Wybierz</option>
-                                    <option value="">Nieruchomość na wynajem</option>
-                                    <option value="">Nieruchomość na wynajem z opcją wykupu</option>
+                                    <option value="">Condo / apartament na wynajem</option>
+                                    <option value="">Wynajem</option>
+                                    <option value="">Wynajem z opcją wykupu</option>
                                     <option value="">Flip</option>
                                 </select></div>
-                            <div class="col-12 p-2"><label>Tytuł</label><input class="form-control" type="text"></div>
+                            <div class="col-12 p-2">
+                                <hr class="my-2">
+                            </div>
+                            <div class="col-12 p-2"><label>Okres wynajmu</label><select class="form-control select2">
+                                    <option value="">Wybierz</option>
+                                    <option value="">Do 6 m-cy</option>
+                                    <option value="">Do 12 m-cy</option>
+                                    <option value="">Do 2 lat</option>
+                                    <option value="">Do 3 lat</option>
+                                    <option value="">Powyżej 3 lat</option>
+                                </select></div>
+                            <div class="col-12 p-2"><label>Czy chcesz wykupić?</label><select class="form-control select2">
+                                    <option value="">Wybierz</option>
+                                    <option value="">Tak</option>
+                                    <option value="">Nie</option>
+                                </select></div>
+                            <div class="col-12 p-2"><label>Wartość nieruchomości</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">PLN</span></div><input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 p-2"><label>Kwota do pozyskania</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">PLN</span></div><input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 p-2"><label>Proponowany czynsz najmu</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">PLN</span></div><input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 p-2"><label>Lokalizacja</label><input class="form-control" type="text"></div>
+                            <div class="col-12 p-2"><label>Poziom wkładu własnego</label><select class="form-control select2">
+                                    <option value="">Wybierz</option>
+                                    <option value="">Brak</option>
+                                    <option value="">Do 5%</option>
+                                    <option value="">Do 10%</option>
+                                    <option value="">Do 20%</option>
+                                    <option value="">Powyżej 20%</option>
+                                </select></div>
+                            <div class="col-12 p-2"><label>Stan nieruchomości</label><select class="form-control select2">
+                                    <option value="">Wybierz</option>
+                                    <option value="">Rynek pierwotny</option>
+                                    <option value="">Do remontu</option>
+                                    <option value="">Do wejścia</option>
+                                </select></div>
+                            <div class="col-12 p-2"><label>Czy podpisana umowa przedwstępna lub rezerwacyjna?</label><select class="form-control select2">
+                                    <option value="">Wybierz</option>
+                                    <option value="">Nie</option>
+                                    <option value="">Przedwstępna</option>
+                                    <option value="">Rezerwacyjna</option>
+                                </select></div>
+                            <div class="col-12 p-2">
+                                <hr class="my-2">
+                            </div>
                             <div class="col-12 p-2"><label>Opis nieruchomości</label><textarea class="form-control" rows="6"></textarea></div>
                             <div class="col-12 p-2"><label>Zdjęcia</label><input class="bg-white border rounded form-control-file p-2" type="file"></div>
-                            <div class="col-12 p-2"><label>Warunki finansowania</label><input class="form-control" type="text"></div>
-                            <div class="col-12 p-2"><label>Okres inwestycji</label><select class="form-control select2">
-                                    <option value="">Wybierz</option>
-                                    <option value="0.5">Do pół roku</option>
-                                    <option value="">Do 2 lat</option>
-                                    <option value="5">Do 5 lat</option>
-                                </select></div>
-                            <div class="col-12 p-2"><label>Wartość nieruchomości</label><input class="form-control" type="text"></div>
+                            <div class="col-12 p-2">
+                                <hr class="my-2">
+                            </div>
                             <div class="col-12 p-2"><label>Rodzaj</label><select class="form-control select2">
                                     <option value="">Wybierz</option>
                                     <option value="">Osoba indywidualna</option>
@@ -74,13 +125,19 @@
                             <div class="col-12 col-sm-6 p-2"><label>E-mail</label><input class="form-control" type="text"></div>
                             <div class="col-12 p-2"><label>Informacje</label><textarea class="form-control" rows="6"></textarea></div>
                             <div class="col-12 p-2">
-                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Akceptacja regulaminu - link</label></div>
+                                <hr class="my-2">
                             </div>
                             <div class="col-12 p-2">
-                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Akceptacja RODO - link</label></div>
+                                <div class="custom-control custom-switch"><input class="custom-control-input" type="checkbox" id="formCheck-1"><label class="custom-control-label" for="formCheck-1">Akceptacja regulaminu - link</label></div>
                             </div>
                             <div class="col-12 p-2">
-                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Chcę założyć konto</label></div>
+                                <div class="custom-control custom-switch"><input class="custom-control-input" type="checkbox" id="formCheck-2"><label class="custom-control-label" for="formCheck-2">Akceptacja RODO - link</label></div>
+                            </div>
+                            <div class="col-12 p-2">
+                                <hr class="my-2">
+                            </div>
+                            <div class="col-12 p-2">
+                                <div class="custom-control custom-switch"><input class="custom-control-input" type="checkbox" id="formCheck-3"><label class="custom-control-label" for="formCheck-3">Chcę założyć konto</label></div>
                             </div>
                             <div class="col-12 p-2"><label>Nazwa użytkownika</label><input class="form-control" type="text"></div>
                             <div class="col-12 col-sm-6 p-2"><label>Hasło</label><input class="form-control" type="password"></div>
